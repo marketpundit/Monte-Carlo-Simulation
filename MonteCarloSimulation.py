@@ -12,7 +12,7 @@ style.use('ggplot')
 start = dt.datetime(2017, 1, 3)
 end = dt.datetime(2019, 11, 8)
 
-#Stock ticker and DataSource (Yahoo). Trading session sctock's Close Price
+#Stock ticker (AMD as example) and DataSource (Yahoo). Trading session stock's Close Price
 prices = web.DataReader('AMD', 'yahoo', start, end)['Close']
 returns = prices.pct_change()
 
